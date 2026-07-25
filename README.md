@@ -133,3 +133,66 @@ Protected Load
 | Relay Module | Load protection |
 | Wi-Fi Network | Remote monitoring |
 | AC Load | System under monitoring |
+
+## 💻 Software Architecture
+
+The firmware follows a modular architecture to improve readability, maintainability, and future scalability.
+
+### Software Modules
+
+| Module | Responsibility |
+|---------|----------------|
+| Sensor Manager | Reads voltage and current sensors |
+| Calculation Engine | Computes RMS voltage, current, power, energy, and power factor |
+| Protection Manager | Detects abnormal conditions and controls the relay |
+| Web Server | Hosts the real-time monitoring dashboard |
+| Display Manager | Updates local display (if installed) |
+| Configuration Manager | Stores Wi-Fi and system settings |
+| Main Controller | Coordinates all system operations |
+
+## 🛠️ Development Environment
+
+| Tool | Purpose |
+|------|---------|
+| Arduino IDE | Firmware development |
+| ESP32 Arduino Core | ESP32 programming framework |
+| Git | Version control |
+| GitHub | Source code management |
+| Proteus | Circuit simulation |
+| Web Browser | Dashboard monitoring |
+
+## 📁 Project Structure
+
+```text
+power-quality-monitor/
+│
+├── firmware/        ESP32 source code
+├── hardware/        Schematics, PCB and Proteus files
+├── docs/            Technical documentation
+├── images/          Screenshots and photographs
+├── web/             Dashboard resources
+├── tests/           Testing procedures and results
+└── README.md        Project documentation
+```
+
+## 🚀 Getting Started
+
+### Requirements
+
+- ESP32 Development Board
+- Arduino IDE
+- ESP32 Arduino Core
+- ZMPT101B Voltage Sensor
+- Current Transformer (CT)
+- Relay Module
+
+### Installation
+
+1. Clone this repository.
+2. Open the firmware project in Arduino IDE.
+3. Install the required ESP32 board package.
+4. Configure Wi-Fi credentials.
+5. Upload the firmware to the ESP32.
+6. Access the web dashboard using the ESP32 IP address.
+
+
