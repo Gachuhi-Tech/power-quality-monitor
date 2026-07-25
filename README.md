@@ -196,3 +196,57 @@ power-quality-monitor/
 6. Access the web dashboard using the ESP32 IP address.
 
 
+## 🧪 Testing & Validation
+
+The system will be validated through functional testing, electrical measurements, and protection response verification.
+
+### Test Cases
+
+| Test | Expected Result |
+|------|-----------------|
+| Normal Operation | Relay remains ON and live measurements are displayed |
+| Overvoltage | Relay disconnects the load |
+| Undervoltage | Relay disconnects the load |
+| Overcurrent | Relay disconnects the load |
+| Wi-Fi Connection | Web dashboard becomes accessible |
+| Dashboard Refresh | Live values update correctly |
+
+Future versions will include measured response times, accuracy analysis, and calibration results.
+
+
+## 🚀 Future Improvements
+
+Planned enhancements include:
+
+- MQTT cloud integration
+- Historical data logging
+- Mobile application
+- OTA firmware updates
+- SD card storage
+- Three-phase power monitoring
+- Harmonic analysis
+- Frequency monitoring
+- Remote firmware management
+- User authentication for the web dashboard
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## 👨‍💻 Author
+
+**Peter Ruthi**
+
+Bachelor of Science in Electronics & Computer Technology  
+Mount Kenya University
+
+- GitHub: https://github.com/Gachuhi-Tech
+-  LinkedIn: www.linkedin.com/in/peter-ruthi-816972245
+
+## 🙏 Acknowledgements
+
+Special thanks to the open-source community and the developers of the ESP32 platform, Arduino ecosystem, and supporting libraries that made this project possible.
+
+
+
+
